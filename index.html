@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"> <!-- 부트스트랩 css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> <!-- 부트스트랩 icon css cdn-->
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-warning">Build</span>Cone
+                <!-- text-warning : 글자색상 -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <!-- ms-auto : 안쓰는 왼쪽 화면사용 -->
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    <!-- href = 이동하는 위치 태그명 작성하면 클릭시 그 태그로 이동 -->
+                    <a class="nav-link" href="#services">Service</a>
+                    <a class="nav-link" href="#Portfolio">Portfolio</a>
+                    <a class="nav-link" href="#Team">Team</a>
+                    <a class="nav-link" href="#contact">contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/home-1.jpg" class="d-block w-100" alt="이미지1">
+                <div class="carousel-caption">
+                    <h5>Lorem, ipsum dolor 1.</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, impedit!</p>
+                    <p><a href="#" class="btn btn-outline-warning mt-5">Learn More</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/home-2.jpg" class="d-block w-100" alt="이미지2">
+                <div class="carousel-caption">
+                    <h5>Lorem ipsum dolor sit 2.</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, impedit!</p>
+                    <p><a href="#" class="btn btn-warning mt-5">Learn More</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/home-3.jpg" class="d-block w-100" alt="이미지3">
+                <div class="carousel-caption">
+                    <h5>Lorem, ipsum 3.</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, impedit!</p>
+                    <p><a href="#" class="btn btn-warning mt-5">Learn More</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-12 col-12">
+                <!-- col-lg/md~은 (부트스트랩-grid) 화면넓이에 따라 차지하는 이미지영역 설정
+                         (12개가 최대) / (같은 형제와 영역 나눠사용함) -->
+                <div class="about-img">
+                    <img src="img/about.jpg" alt="이미지" class="img-fluid">
+                    <!-- -fluid : 넓이 100% -->
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-12 col-12">
+                <div class="about-text">
+                    <h2>Lorem ipsum dolor sit amet. <br>
+                        Lorem, ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt animi iure fugiat illo voluptates
+                        autem vero incidunt nisi? Magni nostrum at tenetur a minima debitis possimus voluptates cum
+                        illum obcaecati.</p>
+                    <a href="#" class="btn btn-warning">Read more</a>
+                </div>
+            </div>
+        </div> <!-- .row end -->
+    </div>
+
+    <section id="about" class="about section-padding">
+        <div class="container">
+
+        </div>
+    </section> <!-- #about end -->
+
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Our Services</h2>
+                        <p>Lorem ipsum dolor sit amet. <br />
+                            Lorem ipsum dolor sit. </p>
+                    </div>
+                </div>
+            </div> <!-- .row end -->
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <div class="card text-center bg-dark text-white pb-2">
+                        <i class="bi bi-arrow-through-heart"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                        </div>
+                    </div> <!-- .card end -->
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 mb-3">
+                    <div class="card text-center bg-dark text-white pb-2">
+                        <i class="bi bi-box2-heart"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                        </div>
+                    </div> <!-- .card end -->
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card text-center bg-dark text-white pb-2">
+                        <i class="bi bi-balloon-heart-fill"></i>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-warning">Go somewhere</a>
+                        </div>
+                    </div> <!-- .card end -->
+                </div>
+            </div> <!-- .row end -->
+        </div>
+    </section> <!-- #services end -->
+
+    <section id="Portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Our projects</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </div> <!-- .row end -->
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card text-center bg-white p-3 mb-3">
+                        <img src="img/project-1.jpg" class="card-img-top" alt="프로젝트1">
+                        <div class="card-body">
+                          <h5 class="card-title">Building Make</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-warning">Learn More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card text-center bg-white p-3 mb-3">
+                        <img src="img/project-2.jpg" class="card-img-top" alt="프로젝트2">
+                        <div class="card-body">
+                          <h5 class="card-title">Building Make</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-warning">Learn More</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card text-center bg-white p-3">
+                        <img src="img/project-3.jpg" class="card-img-top" alt="프로젝트3">
+                        <div class="card-body">
+                          <h5 class="card-title">Building Make</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-warning">Learn More</a>
+                        </div>
+                      </div>
+                </div>
+            </div> <!-- .row end -->
+        </div>
+    </section> <!-- #portfolio end -->
+
+    <section id="Team" class="team section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="section-header text-center pb-5">
+                    <h2>Team</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div> <!-- .row end -->
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <div class="card text-center p-3">
+                        <img src="img/team-1.jpg" class="card-img-top rounded-circle" alt="팀1">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="socials">
+                            <i class="bi bi-twitter mx-1"></i>
+                            <i class="bi bi-facebook mx-1"></i>
+                            <i class="bi bi-linkedin mx-1"></i>
+                            <i class="bi bi-instagram mx-1"></i>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <div class="card text-center p-3">
+                        <img src="img/team-2.jpg" class="card-img-top rounded-circle" alt="팀2">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="socials">
+                            <i class="bi bi-twitter mx-1"></i>
+                            <i class="bi bi-facebook mx-1"></i>
+                            <i class="bi bi-linkedin mx-1"></i>
+                            <i class="bi bi-instagram mx-1"></i>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <div class="card text-center p-3">
+                        <img src="img/team-3.jpg" class="card-img-top rounded-circle" alt="팀3">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="socials">
+                            <i class="bi bi-twitter mx-1"></i>
+                            <i class="bi bi-facebook mx-1"></i>
+                            <i class="bi bi-linkedin mx-1"></i>
+                            <i class="bi bi-instagram mx-1"></i>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-3">
+                    <div class="card text-center p-3">
+                        <img src="img/team-4.jpg" class="card-img-top rounded-circle" alt="팀4">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="socials">
+                            <i class="bi bi-twitter mx-1"></i>
+                            <i class="bi bi-facebook mx-1"></i>
+                            <i class="bi bi-linkedin mx-1"></i>
+                            <i class="bi bi-instagram mx-1"></i>
+                          </p>
+                        </div>
+                      </div>
+                </div>
+            </div> <!-- .row end -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header text-center">
+                            <h2>Contact Us</h2>
+                            <p>Lorem ipsum dolor sit amet. <br>
+                            Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div> <!-- .row end -->
+                <div class="row">
+                    <div class="com-md-12">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input type="text" placeholder="Full Name" class="form-control">
+                                    </div>
+                                </div>
+                            </div> <!-- .row -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input type="email" placeholder="Email" class="form-control">
+                                    </div>
+                                </div>
+                            </div> <!-- .row -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <textarea placeholder="Message" class="form-control" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div> <!-- .row -->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3 d-grid">
+                                        <button type="submit" class="btn btn-warning">Send Now</button>
+                                    </div>
+                                </div>
+                            </div> <!-- .row -->
+                        </form>
+                    </div>
+                </div> <!-- .row end -->
+            </div> <!-- .container end -->
+        </div> <!-- .contact end -->
+    </section> <!-- #contact end -->
+
+    <footer class="text-center bg-dark p-2">
+        <div class="container">
+            <p class="text-white">All Right Reserved By @Website Name</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
